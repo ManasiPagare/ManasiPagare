@@ -1,0 +1,626 @@
+*{
+
+	margin: 0;
+	padding: 0;
+}
+@import url("fonts.css");
+@import url("https://use.typekit.net/kwy7wjo.css");
+
+body{
+	
+	background: url("../images/background-image.jpg");
+	font-family: century-gothic, sans-serif;
+}
+
+nav{
+	
+	box-shadow: 1px 1px 20px 1px #000;
+}
+
+.navbar{
+	
+	position: fixed;
+    width: 100%;
+    top: 0px;
+    overflow: hidden;
+    z-index: 99;
+	background: url("../images/background-image.jpg");
+	/*background: #021C37; */
+}
+
+.navbar-brand {
+	
+	font-size: 36px;
+	margin: 30px;
+	padding-top: 0px;
+}
+
+@media only screen and (max-width: 768px){
+	.navbar-brand {
+	font-size: 14px;
+	margin: 10px 10px;
+	}
+}
+
+.social-media{
+	padding-right: 20px;
+	padding-top: 0px;
+
+	
+}
+
+@media only screen and (max-width: 768px){	
+.social-media{
+	padding-right: 10px;
+}
+}
+
+
+.shadow-lg{
+	
+	text-shadow: 1px 1px 8px #000000;
+}
+
+.middle-section{
+
+padding-top: 20px;
+display: flex;
+justify-content: space-around;
+width: 30%;
+}
+
+
+
+@media only screen and (max-width: 768px){
+	.middle-section{
+
+ 	font-size: 12px;
+}
+}
+
+.burger{
+	
+	display: none;
+	cursor: pointer;
+	
+	
+}
+
+.burger div{
+	
+	width: 25px;
+	height: 2px;
+	margin: 5px;
+	background-color: #FFFFFF;
+	border-radius: 2px;
+	
+}
+@media only screen and (max-width: 1024px){
+	
+	.middle-section{
+	width: 60%;
+}
+	.social-media{
+	width: 60%;
+}
+}
+@media only screen and (max-width: 768px){
+
+body {
+
+  overflow-x: hidden;
+
+ }
+	.middle-section {
+		position: absolute;
+		right:0px;
+		height: 12vh;
+		width: 35vh;
+		top: 18vh;
+		padding-top: 0px;
+		background-color: rgba(9,9,9,0.60);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		tarnsform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.middle-section li{
+opacity: 0;
+	}
+	.social-media{
+		position: absolute;
+		right:0px;
+		height: 10vh;
+		width: 35vh;
+		top: 30vh;
+		background-color: rgba(9,9,9,0.60);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		tarnsform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.social-media i{
+opacity: 0;
+	}
+	
+	.burger{
+		display:block;
+	}
+	.nav-burger-active{
+	
+	transform: translateX(0%);
+}
+}
+
+@media only screen and (max-width: 768px){
+	.mobile-hidden{
+		display:none;
+		
+	}
+}
+
+
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+
+.introduction{
+	
+	padding-top: 30%;
+	justify-content: center;
+
+}
+
+
+
+.introduction h1{
+	
+	font-family: century-gothic, sans-serif;
+	font-size: 22px;
+	color: #E2E2E2;
+	padding: 0px;
+	margin: 0px;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translateX(-50%),translateY(-50%);
+	
+}
+
+
+
+.introduction p{
+	
+	font-family: century-gothic, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: #50E3C2;
+	padding: 0px;
+	padding-top: 10px;
+	margin: 0px;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translateX(-50%),translateY(-50%);
+	
+}
+
+@media only screen and (max-width: 768px){
+	
+	.introduction h1{
+	
+	font-family: century-gothic, sans-serif;
+	font-size: 14px;
+	color: #E2E2E2;
+	padding: 0px;
+	margin: 0px;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translateX(-50%),translateY(-50%);
+	
+}
+	
+	.introduction p{
+	
+	font-family: century-gothic, sans-serif;
+	font-size: 10px;
+	font-weight: 700;
+	color: #50E3C2;
+	padding: 0px;
+	padding-top: 10px;
+	margin: 0px;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translateX(-50%),translateY(-50%);
+	
+}
+}
+
+
+
+/* ******************* work Section ********************** */
+.container{
+	
+	top: 50%;
+	text-align: center;
+}
+
+
+.header-buttons{
+	
+   height: 100px;
+margin-top: 110px;
+}
+
+.my-button{
+	
+	border-radius: 30px;
+	padding: 10px 50px;
+	margin: 0px 20px;
+	margin-top: 60px;
+	font-size: 12px;
+	font-weight: 700;
+	background-color: #ECECEC;
+	color: #444;
+
+}
+
+
+
+.my-button:hover{
+	
+	border-radius: 30px;
+	padding: 10px 50px;
+	margin: 0px 20px;
+	margin-top: 60px;
+	font-size: 12px;
+	font-weight: 700;
+	border: none;
+	background-color: rgba(141,141,141,0.61);
+	color: #fff;
+
+	
+}
+
+@media only screen and (max-width: 768px){
+	
+	.my-button{
+	
+	border-radius: 30px;
+	padding: 10px 50px;
+	margin: 0px 20px;
+	margin-top: 60px;
+	font-size: 10px;
+	font-weight: 700;
+	background-color: #ECECEC;
+	color: #444;
+
+	
+}
+	
+}
+
+.not-active{
+	
+	border-radius: 30px;
+	padding: 10px 50px;
+	margin: 0px 20px;
+	margin-top: 60px;
+	font-size: 12px;
+	font-weight: 700;
+	border: 2px solid #fff;
+	background-color: Transparent;
+	color: #fff;
+}
+
+
+
+hr{
+	width: 1000px;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border: 0 none;
+    margin-top: 50px;
+    opacity: 0.2;
+} /* Horizontal line  */
+
+@media only screen and (max-width: 768px){
+
+	hr{
+	width: 200px;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border: 0 none;
+    margin-top: 50px;
+    opacity: 0.2;
+} /* Horizontal line  */
+	
+}
+
+.uiux-results{
+	
+margin-top: 40px;
+	border:#fff;
+	
+}
+.uiux-results img{
+	
+	border-radius: 10px;
+	float: left;
+	
+	
+}
+
+.graphics-results{
+	
+margin-top: 40px;
+	border:#fff;
+	
+}
+
+
+.motions-results{
+	
+margin-top: 40px;
+	border:#fff;
+	
+}
+.motions-results img{
+	
+	border-radius: 10px;
+	margin: 0px 20px;
+	float: left;
+	
+}
+/* ******************* Work Section Ended ********************** */
+
+/* ******************* About Section ********************** */
+
+
+.intro{
+	
+	margin-top: 200px;
+	font-family: century-gothic, sans-serif;
+	font-size: 10px;
+	color: #C1C1C1;
+}
+
+.about-row{
+
+
+	margin-top: 60px;
+	font-size: 14px;
+	justify-content: center;
+}
+
+.icon-color{
+	
+	color:#FAD961;
+	
+
+}
+
+
+/* ************************ Case Studies **************************** */ 
+
+
+
+.banner-img{
+	
+	width: 800px;
+	margin-top: 30px;
+    margin-bottom: 50px;
+	
+}
+
+@media only screen and (max-width: 768px){
+	
+	.banner-img{
+	
+	width: 300px;
+	margin-top: 20px;
+    margin-bottom: 30px;
+	
+}
+	
+}
+
+.quote{
+
+	margin: auto; /*to center the text*/
+	padding: 90px 0px;
+	text-align: center;
+	font-size: 14px;
+    font-family: century-gothic, sans-serif;
+	color: #C1C1C1;
+	background: #021C37;
+	
+	
+}
+
+.role{
+	
+	margin: auto; /*to center the text*/
+	padding: 15px 0px;
+	text-align: center;
+	width: 800px;
+	font-size: 14px;
+    font-family: century-gothic, sans-serif;
+	color: #444;
+	background-color:rgba(252,252,252,0.8);
+	border-radius: 5px;
+	margin-top: 30px;
+	
+}
+.para{
+	
+	margin: auto; /*to center the text*/
+	line-height: 25px;
+	width: 800px;
+	text-align: justify;
+    font-family: century-gothic, sans-serif;
+	font-size: 12px;
+	color: #C1C1C1;
+	background: #021C37;
+}
+
+.overview{
+	
+	
+	align-self: center;
+	font-family: century-gothic, sans-serif;
+	font-size: 14px;
+	color: #C1C1C1;
+	background: #021C37;
+}
+
+.overview li {
+	
+	list-style-position: inside;
+	text-align: justify;
+}
+
+.overview h4 {
+
+	font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 30px;
+	padding-top: 50px;
+}
+
+
+.overview h6 {
+
+	font-size: 18px;
+    color: #C1C1C1;
+    font-weight: 400;
+}
+
+.overview h5{
+	
+	font-size: 18px;
+    color: #F3CF40;
+    font-weight: 100;
+    margin: 30px;
+}
+
+
+.border-small{
+	
+	width: 300px;
+	display:inline-block;
+	
+}
+
+.problem-area{
+	
+	
+}
+
+
+.process-diag{
+	
+	width: 800px;
+	margin-top: 20px;
+	
+}
+
+.interview-img{
+	
+	width: 500px;
+}
+
+.text-below-img{
+	
+	font-size: 12px;
+    color: #CACACA;
+  
+}
+
+@media only screen and (max-width: 768px){
+	
+	.overview{
+		
+	align-self: center;
+	font-family: century-gothic, sans-serif;
+	font-size: 12px;
+	color: #C1C1C1;
+	background: #021C37;
+		
+	}
+	
+	.overview h4 {
+
+	font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 20px;
+	padding-top: 10px;
+}
+	
+	.overview h6 {
+
+	font-size: 10px;
+    color:#C1C1C1;
+    font-weight: 400;
+}
+
+	
+	.process-diag {
+	
+		width: 350px;
+		
+	}
+	
+	.interview-img{
+	
+	width: 200px;
+}
+	
+	
+
+}
+
+/*----------------------- Card Text ---------------------------------*/
+
+.card-title{
+
+	font-family: century-gothic, sans-serif;
+	font-size: 14px;
+	color: #021C37;
+	font-weight: 600;
+}
+
+.card-text{
+
+	font-family: century-gothic, sans-serif;
+	font-size: 10px;
+	color: #444;
+	
+}
+
+
+
+
+
+
+
+
